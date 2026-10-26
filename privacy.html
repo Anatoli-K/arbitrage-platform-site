@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Arbitrage Platform accesses, uses and stores selected Google spreadsheet data, and how the account owner can revoke access.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Privacy Policy — Arbitrage Platform</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Arbitrage Platform home">
+        <img src="favicon.svg" width="34" height="34" alt="">
+        <span>Arbitrage Platform</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="./">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="https://github.com/Anatoli-K/arbitrage-platform-site/issues">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="policy container" tabindex="-1">
+    <div class="policy-heading">
+      <p class="section-label">Your data</p>
+      <h1>Privacy Policy</h1>
+      <p class="policy-date">Last updated: October 26, 2026</p>
+      <p class="lead">How Arbitrage Platform handles data in the owner's personal reporting workflow.</p>
+    </div>
+
+    <article class="prose" aria-label="Privacy policy details">
+      <section aria-labelledby="operator">
+        <h2 id="operator">1. Application and operator</h2>
+        <p>Arbitrage Platform is a personal application maintained by <a href="https://github.com/Anatoli-K">Anatoli-K</a>. It collects advertising reports and is being connected to selected Google spreadsheets for the account owner's reporting workflow.</p>
+        <p>This policy applies to the application's Google integration and these informational website pages. It will be updated when the application's use of Google data changes.</p>
+      </section>
+
+      <section aria-labelledby="access">
+        <h2 id="access">2. Google data accessed</h2>
+        <p>The application requests access to files the user explicitly selects and authorizes through Google. Depending on the selected reporting spreadsheet, this can include:</p>
+        <ul>
+          <li>File and sheet identifiers, names and spreadsheet structure.</li>
+          <li>Cell values, formulas, number formats and chart definitions needed for the reporting workflow.</li>
+          <li>Google authorization credentials that allow the application to use the granted access, including while the user is not present.</li>
+        </ul>
+        <p>The file permission can allow reading and managing selected files. The current Google integration is being configured for read-only spreadsheet inspection. Automatic spreadsheet updates and dashboard delivery are not enabled yet.</p>
+      </section>
+
+      <section aria-labelledby="purpose">
+        <h2 id="purpose">3. Purpose and limits of use</h2>
+        <p>Google spreadsheet data is used to understand reporting sheets and connect the owner's advertising reports. Google user data is not sold, used for advertising profiles or used to train general-purpose artificial intelligence models.</p>
+        <p>The application's use and transfer of information received from Google APIs must follow the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+      </section>
+
+      <section aria-labelledby="storage">
+        <h2 id="storage">4. Storage and protection</h2>
+        <p>Authorization credentials are stored on the operator's private server outside the public source repository, with access restricted through operating-system permissions. The private server also stores reporting data and private spreadsheet inspection snapshots.</p>
+        <p>Credentials, spreadsheet contents and report files are not included in this public website or its repository. Server backups may contain copies of locally stored data and authorization credentials.</p>
+      </section>
+
+      <section aria-labelledby="sharing">
+        <h2 id="sharing">5. Services involved</h2>
+        <p>Google hosts the selected spreadsheets and processes authorization and API requests. Telegram processes the private bot's commands, progress messages and completion notifications. Delivery of spreadsheet reports or dashboard images through Telegram is a planned feature; the policy will be updated before that changes how Google data is shared.</p>
+        <p>GitHub hosts these informational website pages and may process technical request information, including IP addresses, for security and service operation. The website's own code contains no analytics scripts, cookies, sign-in forms or advertising trackers.</p>
+        <p>These services also process information under their own policies: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://telegram.org/privacy">Telegram Privacy Policy</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+      </section>
+
+      <section aria-labelledby="retention">
+        <h2 id="retention">6. Retention and deletion</h2>
+        <p>Locally stored reports and credentials remain under the operator's control until they are overwritten or removed. There is no promised automatic deletion period. The account owner can delete locally stored inspection data and credentials from their server and manage backup copies separately.</p>
+        <p>Revoking Google access prevents further authorized Google requests once the revocation takes effect. It does not automatically erase existing local reports, inspection snapshots or backups.</p>
+      </section>
+
+      <section aria-labelledby="revoke">
+        <h2 id="revoke">7. Revoking Google access</h2>
+        <p>The account owner can review or revoke the application's access in <a href="https://myaccount.google.com/connections">Google Account connections</a>. A new authorization is required to reconnect after access has been revoked.</p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">8. Contact</h2>
+        <p>The operator is <a href="https://github.com/Anatoli-K">Anatoli-K</a>. General support and questions about this policy can be raised through <a href="https://github.com/Anatoli-K/arbitrage-platform-site/issues">the website repository's GitHub Issues</a>.</p>
+        <p>Issues are public. Do not post private spreadsheet contents, reports or authorization credentials there. The account owner manages private data and access directly on their own server.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Arbitrage Platform · Personal reporting</span>
+      <a href="./">Back to home</a>
+    </div>
+  </footer>
+</body>
+</html>
