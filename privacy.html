@@ -30,7 +30,7 @@
     <div class="policy-heading">
       <p class="section-label">Your data</p>
       <h1>Privacy Policy</h1>
-      <p class="policy-date">Last updated: October 26, 2026</p>
+      <p class="policy-date">Last updated: October 27, 2026</p>
       <p class="lead">How Arbitrage Platform handles data in the owner's personal reporting workflow.</p>
     </div>
 
@@ -49,24 +49,24 @@
           <li>Cell values, formulas, number formats and chart definitions needed for the reporting workflow.</li>
           <li>Google authorization credentials that allow the application to use the granted access, including while the user is not present.</li>
         </ul>
-        <p>The file permission can allow reading and managing selected files. The current Google integration is being configured for read-only spreadsheet inspection. Automatic spreadsheet updates and dashboard delivery are not enabled yet.</p>
+        <p>The file permission allows reading and updating selected files. Spreadsheet inspection is connected. An optional update workflow is being prepared: when enabled, the account owner will request each update through the private Telegram bot and choose a reporting mode before it starts.</p>
       </section>
 
       <section aria-labelledby="purpose">
         <h2 id="purpose">3. Purpose and limits of use</h2>
-        <p>Google spreadsheet data is used to understand reporting sheets and connect the owner's advertising reports. Google user data is not sold, used for advertising profiles or used to train general-purpose artificial intelligence models.</p>
+        <p>Google spreadsheet data is used to inspect reporting sheets, import the owner's advertising reports, apply the selected reporting mode and generate an image of the requested dashboard area. Google user data is not sold, used for advertising profiles or used to train general-purpose artificial intelligence models.</p>
         <p>The application's use and transfer of information received from Google APIs must follow the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
       </section>
 
       <section aria-labelledby="storage">
         <h2 id="storage">4. Storage and protection</h2>
-        <p>Authorization credentials are stored on the operator's private server outside the public source repository, with access restricted through operating-system permissions. The private server also stores reporting data and private spreadsheet inspection snapshots.</p>
+        <p>Authorization credentials are stored on the operator's private server outside the public source repository, with access restricted through operating-system permissions. The private server also stores reporting data, private spreadsheet inspection snapshots, recovery copies for updates and generated dashboard images.</p>
         <p>Credentials, spreadsheet contents and report files are not included in this public website or its repository. Server backups may contain copies of locally stored data and authorization credentials.</p>
       </section>
 
       <section aria-labelledby="sharing">
         <h2 id="sharing">5. Services involved</h2>
-        <p>Google hosts the selected spreadsheets and processes authorization and API requests. Telegram processes the private bot's commands, progress messages and completion notifications. Delivery of spreadsheet reports or dashboard images through Telegram is a planned feature; the policy will be updated before that changes how Google data is shared.</p>
+        <p>Google hosts the selected spreadsheets and processes authorization, API requests and dashboard exports. When the optional update workflow is enabled and the account owner requests an update, the resulting dashboard image will be sent to the owner's configured private Telegram chat. Telegram will therefore process the spreadsheet information visible in that image, as well as commands, progress messages and completion notifications. Google authorization credentials are not sent to Telegram.</p>
         <p>GitHub hosts these informational website pages and may process technical request information, including IP addresses, for security and service operation. The website's own code contains no analytics scripts, cookies, sign-in forms or advertising trackers.</p>
         <p>These services also process information under their own policies: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://telegram.org/privacy">Telegram Privacy Policy</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
       </section>
